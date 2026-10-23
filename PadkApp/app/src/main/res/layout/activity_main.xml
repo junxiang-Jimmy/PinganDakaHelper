@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平安打卡"
+            android:textColor="#1A2B4A"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="中南大学智慧学工 · 自动/手动打卡"
+            android:textColor="#6B7A94"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/meta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card"
+            android:lineSpacingExtra="4dp"
+            android:padding="16dp"
+            android:text="…"
+            android:textColor="#33415C"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/status_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:text="正在打卡…"
+            android:textColor="#1A2B4A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:layout_marginTop="8dp"
+            android:padding="16dp"
+            android:text=""
+            android:textColor="#33415C"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_punch"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2278FD"
+            android:text="立即打卡"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1A2B4A"
+                android:text="登录"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_settings"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1A2B4A"
+                android:text="设置"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_diag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="复制自动登录诊断（失败时发给开发者）" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="说明：打开本页会自动检查并完成今日打卡；19:05 定时任务在设置里开启。遇到验证码/短信验证时会通知你到「登录」页人工完成一次。"
+            android:textColor="#8A94A8"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

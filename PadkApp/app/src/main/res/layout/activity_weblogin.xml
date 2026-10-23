@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/login_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF8E1"
+        android:padding="10dp"
+        android:text="如果出现图形验证码或短信验证码，输入一次即可。登录成功后本页会自动关闭。"
+        android:textColor="#7A5C00"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

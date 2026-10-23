@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="#1A2B4A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="学号（用于自动登录）"
+            android:textColor="#33415C"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="学号/工号"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="统一身份认证口令（保存在本机，仅用于自动登录）"
+            android:textColor="#33415C"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="统一身份认证口令"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <Switch
+            android:id="@+id/sw_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="每天定时自动打卡"
+            android:textColor="#1A2B4A"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#2278FD"
+            android:text="打卡时间 19:05（点击修改）"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="打卡地点名称（选填，随打卡记录提交）"
+            android:textColor="#33415C"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="如：中南大学南校区升华公寓"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:text="默认位置：未设置"
+            android:textColor="#33415C"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#1A2B4A"
+            android:text="记录当前位置为默认打卡位置"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="权限（各点一次）"
+            android:textColor="#1A2B4A"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_notif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="① 允许通知（接收打卡结果）" />
+
+        <Button
+            android:id="@+id/btn_exact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="② 允许精确闹钟（准点执行）" />
+
+        <Button
+            android:id="@+id/btn_battery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="③ 忽略电池优化（防后台清理）" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#2E7D32"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2278FD"
+            android:text="保存设置"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>
